@@ -34,11 +34,11 @@ int main()
 	scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
-		input(s[i]);
+		input(&s[i]);
 	}
 	for(i=0;i<n;i++)
 	{
-		output(s[i]);
+		output(&s[i]);
 	}
 	getch();
 	return 0;

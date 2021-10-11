@@ -7,23 +7,23 @@ int id;
 int age;
 int marks;
 };
-void input(struct student &s1);
-void output(struct student &s1);
-void input(struct student &s1)
+void input(struct student *s1);
+void output(struct student *s1);
+void input(struct student *s1)
 {
 	printf("enter the id\n");
-	scanf("%d",&s1.id);
+	scanf("%d",&s1->id);
 	printf("enter the age\n");
-	scanf("%d",&s1.age);
+	scanf("%d",&s1->age);
 	printf("enter the marks\n");
-	scanf("%d",&s1.marks);
+	scanf("%d",&s1->marks);
 }
-void output(struct student &s1)
+void output(struct student *s1)
 {
 	printf("student details are:\n");
-	printf("ID - %d\t",s1.id);
-	printf("Age - %d\t",s1.age);
-	printf("Marks - %d\t",s1.marks);
+	printf("ID - %d\t",s1->id);
+	printf("Age - %d\t",s1->age);
+	printf("Marks - %d\t",s1->marks);
 }
 int main()
 {

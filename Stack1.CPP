@@ -8,11 +8,12 @@ int top = -1;
 int s[10];
 int item;
 
-void push() {
- if(top == SIZE-1) {
+void push() 
+{
+  if(top == SIZE-1) {
   printf("\nStack Overflow");
   return;
- }
+}
  top++;
  s[top] = item;
 }
@@ -23,9 +24,11 @@ int pop() {
  return s[top--];
 }
 
-void display() {
+void display() 
+{
  int i;
- if(top == -1) {
+ if(top == -1) 
+ {
   printf("\nStack is empty");
   return;
  }
@@ -34,15 +37,18 @@ void display() {
   printf("%d ", s[i]);
 }
 
-void main() {
+void main() 
+{
  int v;
  int c;
  clrscr();
- for(;;) {
+ for(;;) 
+ {
   printf("\n1:Push\n2:Pop\n3:Display\n4:Exit");\
   printf("\nEnter the Choice: ");
   scanf("%d", &c);
-  switch(c) {
+  switch(c) 
+  {
    case 1: printf("\nEnter item to be inserted: ");
 	   scanf("%d", &item);
 	   push();
